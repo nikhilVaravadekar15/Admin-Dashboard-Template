@@ -1,0 +1,88 @@
+.LeftSidebar{
+    flex: 1;
+    height: 100vh;
+    background: white;
+    border: 0.5px solid rgb(230, 227, 227);
+}
+
+.LeftSidebar .top{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LeftSidebar .top .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #6439ff;
+}
+
+.LeftSidebar hr{
+    height: 0;
+    border: 0.5px solid rgb(228, 225, 225);
+}
+
+.LeftSidebar .center{
+    padding: 8px;
+}
+
+.LeftSidebar .center ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.LeftSidebar .center ul .title{
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.LeftSidebar .center ul li{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.LeftSidebar .center ul li:hover{
+    background-color: #ece8ff;
+    border-radius: 4px;
+}
+
+.LeftSidebar .center ul li .icon{
+    font-size: 18px;
+    color: #7451f8;
+}
+
+.LeftSidebar .center ul li span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+    margin-left: 8px;
+}
+
+.LeftSidebar .bottom{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.LeftSidebar .bottom .colorOption{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #7451f8;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.LeftSidebar .bottom .colorOption:nth-child(1){
+    background-color: whitesmoke;
+}
+.LeftSidebar .bottom .colorOption:nth-child(2){
+    background-color: #333;
+}
