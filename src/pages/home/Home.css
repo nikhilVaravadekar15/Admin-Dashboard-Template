@@ -5,3 +5,9 @@
 .homeContainer{
     flex: 6;
 }
+
+.homeContainer .widgets{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+}
