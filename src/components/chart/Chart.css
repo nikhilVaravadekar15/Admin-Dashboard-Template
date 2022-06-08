@@ -10,3 +10,6 @@
 .Chart .title{
     margin-bottom: 16px;
 }
+.Chart .recharts-wrapper{
+    width: 100%;
+}

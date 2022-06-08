@@ -16,3 +16,17 @@
 .homeContainer .charts{
     padding: 4px 16px;
 }
+
+.homeContainer .listContainer{    
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 16px;
+}
+
+.homeContainer .listContainer .listTitle{    
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 16px;
+}

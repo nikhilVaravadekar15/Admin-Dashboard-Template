@@ -6,6 +6,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Widget from '../../components/widget/Widget'
 import FeaturedChart from '../../components/featuredChart/FeaturedChart'
 import Chart from '../../components/chart/Chart'
+import BasicTable from '../../components/basicTable/BasicTable'
 
 function Home() {
   const widgetArr = ["user", "orders", "earnings", "balance"]
@@ -26,6 +27,10 @@ function Home() {
         <div className="charts">
           <FeaturedChart />
           <Chart />
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">Latest Transtions</div>
+          <BasicTable />
         </div>
       </div>
     </div>
