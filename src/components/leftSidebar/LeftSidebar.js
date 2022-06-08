@@ -8,8 +8,6 @@ import {
   LeftSidebar_service_data,
   LeftSidebar_user_data
 } from '../../data/LeftSidebar_data'
-import DashboardIcon from '@mui/icons-material/Dashboard';
-
 
 function LeftSidebar() {
 
@@ -42,7 +40,7 @@ function LeftSidebar() {
   return (
     <div className="LeftSidebar">
         <div className="top">
-          <span className="logo">ADMIN</span>
+          <span className="logo">ADMIN-DASHBOARD</span>
         </div>
         <hr />
         <div className="center">

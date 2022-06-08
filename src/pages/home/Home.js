@@ -4,20 +4,29 @@ import "./Home.css"
 import LeftSidebar from '../../components/leftSidebar/LeftSidebar'
 import Navbar from '../../components/navbar/Navbar'
 import Widget from '../../components/widget/Widget'
+import FeaturedChart from '../../components/featuredChart/FeaturedChart'
+import Chart from '../../components/chart/Chart'
 
 function Home() {
+  const widgetArr = ["user", "orders", "earnings", "balance"]
+  const widgetArr_mapper = widgetArr.map((item, index) => {
+    return (
+      <Widget type={item} key={index}/>
+    )
+  })
+
   return (
     <div className="Home">
       <LeftSidebar />
       <div className="homeContainer">
         <Navbar />
         <div className="widgets">
-          <Widget type="user"/>
-          <Widget type="orders"/>
-          <Widget type="earnings"/>
-          <Widget type="balance"/>
+          {widgetArr_mapper}
         </div>
-        <div className="charts">charts</div>
+        <div className="charts">
+          <FeaturedChart />
+          <Chart />
+        </div>
       </div>
     </div>
   )

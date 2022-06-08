@@ -1,0 +1,76 @@
+.FeaturedChart{
+    flex: 2;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.FeaturedChart .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+
+.FeaturedChart .top .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.FeaturedChart .bottom {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.FeaturedChart .bottom .featuredProgressbarChart{
+    width: 96px;
+    height: 96px;
+}
+
+.FeaturedChart .bottom .title{
+    font-weight: 500;
+    color: gray;
+}
+.FeaturedChart .bottom .amount{
+    font-size: 28px;
+}
+.FeaturedChart .bottom .description{
+    font-size: 12px;
+    font-weight: 300;
+    color: gray;
+    text-align: center;
+}
+
+.FeaturedChart .bottom .summary{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FeaturedChart .bottom .summary .item{
+    text-align: center;
+}
+
+.FeaturedChart .bottom .summary .item__title{
+    font-size: 14px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.FeaturedChart .bottom .summary .item__result{
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 14px;
+}
+.FeaturedChart .bottom .summary .item__result.positive{
+    color: green;
+}
+.FeaturedChart .bottom .summary .item__result.negative{
+    color: red;
+}

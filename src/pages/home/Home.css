@@ -6,8 +6,13 @@
     flex: 6;
 }
 
-.homeContainer .widgets{
+.homeContainer .widgets, 
+.homeContainer .charts {
     display: flex;
     padding: 16px;
     gap: 16px;
+}
+
+.homeContainer .charts{
+    padding: 4px 16px;
 }

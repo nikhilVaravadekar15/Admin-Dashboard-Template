@@ -13,9 +13,11 @@
 }
 
 .LeftSidebar .top .logo{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
     color: #6439ff;
+    cursor: pointer;
 }
 
 .LeftSidebar hr{
