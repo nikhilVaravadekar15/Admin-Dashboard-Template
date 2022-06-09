@@ -1,0 +1,65 @@
+.DataTable{
+    height: 92%;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.DataTable .MuiDataGrid-root{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+
+.DataTable .imageCell{
+    display: flex;
+    align-items: center;
+}
+
+.DataTable .imageCell .image{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.DataTable .statusCell{
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.DataTable .statusCell.active{
+    color: green;
+    background-color: rgba(0, 128, 0, 0.2);
+}
+.DataTable .statusCell.pending{
+    color: goldenrod;
+    background-color: rgba(255, 217, 0, 0.2);
+}
+.DataTable .statusCell.passive{
+    color: crimson;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+.DataTable .actionCell{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.DataTable .actionCell .viewButton{
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: darkblue;
+    border: 1px solid rgb(51, 51, 255);
+}
+
+.DataTable .actionCell .deleteButton{
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: crimson;
+    border: 1px solid rgba(220, 20, 60, 0.2);
+}
