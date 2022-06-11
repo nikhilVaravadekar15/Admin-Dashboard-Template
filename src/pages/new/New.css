@@ -1,0 +1,91 @@
+.New{
+    display: flex;
+    width: 100%;
+}
+
+.New .newContainer{
+    flex: 6;
+}
+
+.New .newContainer .top,
+.New .newContainer .bottom{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.New .newContainer .top h1{
+    color: lightgray;
+    font-size: 20px;
+}
+
+.New .newContainer .bottom .left{
+    flex: 1;
+    text-align: center;
+}
+
+.New .newContainer .bottom .left img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.New .newContainer .bottom .right .forms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: space-around;
+}
+
+.New .newContainer .bottom .right .forms .formInput{
+    width: 40%;
+}
+
+.New .newContainer .bottom .right .forms .formInput label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.New .newContainer .bottom .right .forms .formInput.file label{
+    padding: 16px 0;
+}
+
+.New .newContainer .bottom .right .forms .formInput label .icon{
+    cursor: pointer;
+}
+
+.New .newContainer .bottom .right .forms .formInput input{
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.New .newContainer .bottom .right .forms button{
+    width: 160px;
+    padding: 8px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.New .newContainer .bottom .right .forms button:hover{
+    background-color: rgb(0, 182, 182);
+    color: whitesmoke;
+}
+
+.New .newContainer .bottom .right{
+    flex: 2;
+}
+
