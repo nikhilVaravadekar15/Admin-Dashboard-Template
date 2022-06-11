@@ -4,8 +4,6 @@ import LeftSidebar from '../../components/leftSidebar/LeftSidebar'
 import Navbar from '../../components/navbar/Navbar'
 import "./List.css"
 
-
-
 function List() {
   return (
     <div className="List">

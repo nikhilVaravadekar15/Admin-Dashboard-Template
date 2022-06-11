@@ -5,6 +5,7 @@
     padding: 8px;
     border-radius: 8px;
     color: gray;
+    width: 100%;
 }
 
 .Chart .title{

@@ -1,0 +1,86 @@
+.Single{
+    display: flex;
+    width: 100%;
+}
+
+.Single .singleContainer{
+    flex: 6;
+}
+
+.Single .singleContainer .top{
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.Single .singleContainer .top .top__left{
+   flex: 1;
+   position: relative; 
+   -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.Single .singleContainer .top .top__left .editButton{
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 4px 8px;
+   font-size: 12px;
+   color: #7451f8;
+   background-color: #7451f818;
+   cursor: pointer;
+   border-radius: 0 8px 0 4px; 
+}
+
+.title{
+   font-size: 16px;
+   color: lightgray;
+   margin-bottom: 16px;
+   text-transform: capitalize;
+}
+
+.Single .singleContainer .top .top__left .item{
+    display: flex;
+    gap: 16px;
+}
+
+.Single .singleContainer .top .top__left .item img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.Single .singleContainer .top .top__left .item .details .item__title{
+    margin-bottom: 8px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.Single .singleContainer .top .top__left .item .details .detailItem{
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.Single .singleContainer .top .top__left .item .details .detailItem .itemKey{
+    font-weight: bold;
+    color: gray;
+}
+.Single .singleContainer .top .top__left .item .details .detailItem .itemValue{
+    font-weight: 300;
+    margin-left: 4px;
+}
+
+.Single .singleContainer .top .top__right{
+   flex: 2;
+}
+
+.Single .singleContainer .bottom{
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}

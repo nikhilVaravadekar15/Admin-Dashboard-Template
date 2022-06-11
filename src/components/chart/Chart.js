@@ -4,12 +4,12 @@ import "./Chart.css";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { chart_data } from '../../data/Chart_data';
 
-function Chart() {
+function Chart({title, aspect_ratio}) {
   const data = chart_data
   return (
     <div className='Chart'>
-      <div className="title">Last 6 Months (Revenue/Expenses)</div>
-      <ResponsiveContainer width="100%" >
+      <div className="title">{title}</div>
+      <ResponsiveContainer width="100%" aspect={aspect_ratio}>
         <AreaChart  data={data}
           margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
           <defs>
