@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 
 import "./DataTable.css"
 import { userColumns, userRows } from "../../data/DataTable_data"
-
+import {Link} from "react-router-dom"
 
 function DataTable() {
     const columns = userColumns
-    const rows = userRows
+    const [rows, setRows] = useState(userRows)
+
+    function handleDelete(id){
+      setRows((prevRows) => {
+        return prevRows.filter((item) => item.id !== id)
+      })
+    }
 
     const actionColumn = [
       {
@@ -17,8 +23,12 @@ function DataTable() {
         renderCell: (param) => {
           return (
             <div className="actionCell">
-              <div className="viewButton">View</div>
-              <div className="deleteButton">Delete</div>
+              <Link to="/users/testuser" style={{textDecoration: "none"}}>
+                <div className="viewButton">View</div>  
+              </Link>
+              <div className="deleteButton"
+                onClick={() => handleDelete(param.row.id)}
+              >Delete</div>
             </div>
           )
         }
@@ -27,6 +37,10 @@ function DataTable() {
 
   return (
     <div className='DataTable'>
+      <div className="title">
+        Add New user
+        <Link to="/users/new" className='link' style={{textDecoration: "none"}}>Add New</Link>
+      </div>
         <DataGrid
         rows={rows}
         columns={columns.concat(actionColumn)}

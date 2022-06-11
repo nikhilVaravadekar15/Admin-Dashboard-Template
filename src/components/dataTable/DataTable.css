@@ -4,6 +4,31 @@
     padding: 8px 16px;
 }
 
+.DataTable .title{
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DataTable .title .link{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px 8px;
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+.DataTable .title .link:hover{
+    color: white;
+    background-color: green;
+}
+
 .DataTable .MuiDataGrid-root{
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);

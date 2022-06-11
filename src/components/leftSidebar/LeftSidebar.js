@@ -8,6 +8,7 @@ import {
   LeftSidebar_service_data,
   LeftSidebar_user_data
 } from '../../data/LeftSidebar_data'
+import {Link} from "react-router-dom"
 
 function LeftSidebar() {
 
@@ -40,7 +41,9 @@ function LeftSidebar() {
   return (
     <div className="LeftSidebar">
         <div className="top">
-          <span className="logo">ADMIN-DASHBOARD</span>
+          <Link to="/" >
+            <span className="logo">DASHBOARD</span>
+          </Link>
         </div>
         <hr />
         <div className="center">
@@ -75,10 +78,12 @@ function LeftSidebar() {
 
 function SidebarItem({item, index}){
   return (
-    <li key={index}>
-      <item.icon className="icon"/>
-      <span>{item.value}</span>
-    </li>
+    <Link to={item.linkTo} style={{textDecoration: "none"}}>
+      <li key={index}>
+        <item.icon className="icon"/>
+        <span>{item.value}</span>
+      </li>
+    </Link>
   )
 }
 

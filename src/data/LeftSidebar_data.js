@@ -14,63 +14,75 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 const LeftSidebar_main_data = [
     {
         icon: DashboardIcon,
-        value: "Dashboard"
+        value: "Dashboard",
+        linkTo: "/"
     }
 ]
 
 const LeftSidebar_lists_data = [
     {
         icon: PersonOutlineIcon,
-        value: "Users"
+        value: "Users",
+        linkTo: "/users"
     },
     {
         icon: StoreIcon,
-        value: "Products"
+        value: "Products",
+        linkTo: "/products"
     },
     {
         icon: CreditCardIcon,
-        value: "Orders"
+        value: "Orders",
+        linkTo: "/"
     },
     {
         icon: LocalShippingIcon,
-        value: "Delivery"
+        value: "Delivery",
+        linkTo: "/"
     }
 ]
 
 const LeftSidebar_useful_data = [
     {
         icon: InsertChartIcon,
-        value: "Statistics"
+        value: "Statistics",
+        linkTo: "/"
     },
     {
         icon: NotificationsNoneIcon,
-        value: "Notifications"
+        value: "Notifications",
+        linkTo: "/"
     }
 ]
 
 const LeftSidebar_service_data = [
     {
         icon: SettingsSystemDaydreamOutlinedIcon,
-        value: "System Health"
+        value: "System Health",
+        linkTo: "/"
     },
     {
         icon: PsychologyOutlinedIcon,
-        value: "Logs"
+        value: "Logs",
+        linkTo: "/"
     },
     {
         icon: SettingsApplicationsIcon,
-        value: "Settings"
+        value: "Settings",
+        linkTo: "/"
     }
 ]
 
 const LeftSidebar_user_data = [
     {
         icon: AccountCircleOutlinedIcon,
-        value: "Profile"
+        value: "Profile",
+        linkTo: "/users/testuser"
     },
     {
         icon: ExitToAppIcon,
-        value: "Logout"
+        value: "Logout",
+        linkTo: "/"
     }
 ]
 
